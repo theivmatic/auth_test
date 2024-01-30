@@ -1,4 +1,6 @@
+import 'package:auth_test/src/core/routes/app_router.gr.dart';
 import 'package:auth_test/theme.dart';
+import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
 
 class SendButtonWidget extends StatelessWidget {
@@ -13,7 +15,9 @@ class SendButtonWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     if (isEnabled == false) {
       return FilledButton(
-        onPressed: () {},
+        onPressed: () {
+          context.pushRoute(const ConfirmationRoute());
+        },
         style: ButtonStyle(
           fixedSize: const MaterialStatePropertyAll(
             Size(285, 53),
