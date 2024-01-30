@@ -22,9 +22,9 @@ class NumbersRowWidget extends StatelessWidget {
           width: 36,
           height: 36,
           decoration: BoxDecoration(
-              //TODO: вывести цвет в переменные
-              color: firstCircleColor,
-              shape: BoxShape.circle),
+            color: firstCircleColor,
+            shape: BoxShape.circle,
+          ),
           child: Center(
             child: firstCircleContent,
           ),
@@ -40,9 +40,9 @@ class NumbersRowWidget extends StatelessWidget {
           width: 36,
           height: 36,
           decoration: BoxDecoration(
-              //TODO: вывести цвет в переменные
-              color: secondCircleColor,
-              shape: BoxShape.circle),
+            color: secondCircleColor,
+            shape: BoxShape.circle,
+          ),
           child: const Center(
             child: Text('2'),
           ),
@@ -58,9 +58,9 @@ class NumbersRowWidget extends StatelessWidget {
           width: 36,
           height: 36,
           decoration: const BoxDecoration(
-              //TODO: вывести цвет в переменные
-              color: Color.fromRGBO(236, 236, 236, 1),
-              shape: BoxShape.circle),
+            color: Color.fromRGBO(236, 236, 236, 1),
+            shape: BoxShape.circle,
+          ),
           child: const Center(
             child: Text('3'),
           ),
