@@ -36,6 +36,11 @@ abstract class TextStyles {
     fontWeight: FontWeight.w400,
     color: AppColors.darkGrey,
   );
+  static const textButtonText = TextStyle(
+    fontSize: 15,
+    fontWeight: FontWeight.w400,
+    color: AppColors.orange,
+  );
   static const inputDigits = TextStyle(
     fontSize: 28,
     fontWeight: FontWeight.w400,

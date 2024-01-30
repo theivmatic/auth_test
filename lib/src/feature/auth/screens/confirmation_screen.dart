@@ -49,6 +49,7 @@ class ConfirmationScreen extends StatelessWidget {
                 style: TextStyles.subHeadline,
                 textAlign: TextAlign.center,
               ),
+              const SizedBox(height: 30),
               const Form(
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -59,6 +60,14 @@ class ConfirmationScreen extends StatelessWidget {
                     ConfirmationCellWidget(),
                     ConfirmationCellWidget(),
                   ],
+                ),
+              ),
+              const SizedBox(height: 40),
+              TextButton(
+                onPressed: () {},
+                child: const Text(
+                  'Отправить код еще раз',
+                  style: TextStyles.textButtonText,
                 ),
               ),
             ],
