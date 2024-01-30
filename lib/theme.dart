@@ -7,6 +7,7 @@ abstract class AppColors {
   static const grey = Color.fromRGBO(236, 236, 236, 1);
   static const darkGrey = Color.fromRGBO(79, 79, 79, 1);
   static const buttonGrey = Color.fromRGBO(167, 167, 167, 1);
+  static const green = Color.fromRGBO(57, 163, 20, 1);
 }
 
 abstract class TextStyles {

@@ -30,6 +30,7 @@ class LoginScreen extends StatelessWidget {
               const NumbersRowWidget(
                 firstCircleColor: AppColors.orange,
                 firstCircleContent: Text('1'),
+                firstCircleBorder: null,
                 secondCircleColor: AppColors.grey,
               ),
               const SizedBox(height: 30),

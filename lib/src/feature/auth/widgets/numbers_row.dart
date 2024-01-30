@@ -4,12 +4,14 @@ import 'package:flutter/material.dart';
 class NumbersRowWidget extends StatelessWidget {
   final Color firstCircleColor;
   final dynamic firstCircleContent;
+  final dynamic firstCircleBorder;
   final Color secondCircleColor;
 
   const NumbersRowWidget({
     super.key,
     required this.firstCircleColor,
     required this.firstCircleContent,
+    required this.firstCircleBorder,
     required this.secondCircleColor,
   });
 
@@ -24,6 +26,7 @@ class NumbersRowWidget extends StatelessWidget {
           decoration: BoxDecoration(
             color: firstCircleColor,
             shape: BoxShape.circle,
+            border: firstCircleBorder,
           ),
           child: Center(
             child: firstCircleContent,

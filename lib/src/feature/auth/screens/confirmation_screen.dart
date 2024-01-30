@@ -20,14 +20,20 @@ class ConfirmationScreen extends StatelessWidget {
         elevation: 0,
       ),
       backgroundColor: AppColors.white,
-      body: const SafeArea(
+      body: SafeArea(
         child: Padding(
-          padding: EdgeInsets.symmetric(horizontal: 20),
+          padding: const EdgeInsets.symmetric(horizontal: 20),
           child: Column(
             children: [
               NumbersRowWidget(
-                firstCircleColor: AppColors.orange,
-                firstCircleContent: Text('1'),
+                firstCircleColor: AppColors.white,
+                firstCircleContent: const Icon(
+                  Icons.done,
+                  color: AppColors.green,
+                ),
+                firstCircleBorder: Border.all(
+                  color: AppColors.green,
+                ),
                 secondCircleColor: AppColors.orange,
               ),
             ],
