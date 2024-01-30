@@ -15,6 +15,9 @@ class SendButtonWidget extends StatelessWidget {
       return FilledButton(
         onPressed: () {},
         style: ButtonStyle(
+          fixedSize: const MaterialStatePropertyAll(
+            Size(285, 53),
+          ),
           shape: MaterialStatePropertyAll<OutlinedBorder?>(
             RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(10),
@@ -24,12 +27,18 @@ class SendButtonWidget extends StatelessWidget {
             AppColors.buttonGrey,
           ),
         ),
-        child: const Text('Отправить смс-код'),
+        child: const Text(
+          'Отправить смс-код',
+          style: TextStyles.buttonText,
+        ),
       );
     } else {
       return FilledButton(
         onPressed: () {},
         style: ButtonStyle(
+          fixedSize: const MaterialStatePropertyAll(
+            Size(285, 53),
+          ),
           shape: MaterialStatePropertyAll<OutlinedBorder?>(
             RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(10),
@@ -39,7 +48,10 @@ class SendButtonWidget extends StatelessWidget {
             AppColors.orange,
           ),
         ),
-        child: const Text('Отправить смс-код'),
+        child: const Text(
+          'Отправить смс-код',
+          style: TextStyles.buttonText,
+        ),
       );
     }
   }

@@ -30,6 +30,12 @@ abstract class TextStyles {
     fontWeight: FontWeight.w400,
     color: AppColors.darkGrey,
   );
+  static const buttonText = TextStyle(
+    fontSize: 16,
+    fontWeight: FontWeight.w400,
+    color: AppColors.darkGrey,
+  );
+  
 }
 
 

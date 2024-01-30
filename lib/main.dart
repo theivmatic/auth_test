@@ -1,3 +1,4 @@
+import 'package:auth_test/src/feature/auth/screens/confirmation_screen.dart';
 import 'package:auth_test/src/feature/auth/screens/login_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -11,7 +12,7 @@ class MainApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-      home: LoginScreen(),
+      home: ConfirmationScreen(),
     );
   }
 }

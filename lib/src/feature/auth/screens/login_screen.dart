@@ -21,54 +21,57 @@ class LoginScreen extends StatelessWidget {
         backgroundColor: AppColors.white,
         elevation: 0,
       ),
-      backgroundColor: Colors.white,
+      backgroundColor: AppColors.white,
       body: SafeArea(
-        child: Column(
-          children: [
-            const NumbersRowWidget(
-              firstCircleColor: AppColors.orange,
-              firstCircleContent: Text('1'),
-              secondCircleColor: AppColors.grey,
-            ),
-            const SizedBox(height: 30),
-            const Text(
-              'Регистрация',
-              style: TextStyles.headline,
-            ),
-            const SizedBox(height: 30),
-            const Text(
-              'Введите номер телефона\n для регистрации',
-              style: TextStyles.subHeadline,
-              textAlign: TextAlign.center,
-            ),
-            const SizedBox(height: 50),
-            const Row(
-              children: [
-                Text(
-                  'Номер телефона',
-                  style: TextStyles.formLabel,
-                ),
-              ],
-            ),
-            const SizedBox(height: 10),
-            TextFormField(
-              keyboardType: TextInputType.number,
-              inputFormatters: [
-                LengthLimitingTextInputFormatter(10),
-                FilteringTextInputFormatter.digitsOnly
-              ],
-              decoration: InputDecoration(
-                prefixText: '+7',
-                prefixStyle: TextStyles.formPrefix,
-                border: OutlineInputBorder(
-                  borderRadius: BorderRadius.circular(10),
-                  borderSide: const BorderSide(color: AppColors.lightGray),
+        child: Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 20),
+          child: Column(
+            children: [
+              const NumbersRowWidget(
+                firstCircleColor: AppColors.orange,
+                firstCircleContent: Text('1'),
+                secondCircleColor: AppColors.grey,
+              ),
+              const SizedBox(height: 30),
+              const Text(
+                'Регистрация',
+                style: TextStyles.headline,
+              ),
+              const SizedBox(height: 30),
+              const Text(
+                'Введите номер телефона\n для регистрации',
+                style: TextStyles.subHeadline,
+                textAlign: TextAlign.center,
+              ),
+              const SizedBox(height: 50),
+              const Row(
+                children: [
+                  Text(
+                    'Номер телефона',
+                    style: TextStyles.formLabel,
+                  ),
+                ],
+              ),
+              const SizedBox(height: 10),
+              TextFormField(
+                keyboardType: TextInputType.number,
+                inputFormatters: [
+                  LengthLimitingTextInputFormatter(10),
+                  FilteringTextInputFormatter.digitsOnly
+                ],
+                decoration: InputDecoration(
+                  prefixText: '+7',
+                  prefixStyle: TextStyles.formPrefix,
+                  border: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(10),
+                    borderSide: const BorderSide(color: AppColors.lightGray),
+                  ),
                 ),
               ),
-            ),
-            const SizedBox(height: 120),
-            const SendButtonWidget(isEnabled: false),
-          ],
+              const SizedBox(height: 120),
+              const SendButtonWidget(isEnabled: false),
+            ],
+          ),
         ),
       ),
     );
