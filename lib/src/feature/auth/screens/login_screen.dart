@@ -1,4 +1,5 @@
 import 'package:auth_test/src/feature/auth/widgets/numbers_row.dart';
+import 'package:auth_test/theme.dart';
 import 'package:flutter/material.dart';
 
 class LoginScreen extends StatelessWidget {
@@ -16,7 +17,7 @@ class LoginScreen extends StatelessWidget {
             color: Color.fromRGBO(79, 79, 79, 1),
           ),
         ),
-        backgroundColor: Colors.white,
+        backgroundColor: AppColors.white,
         elevation: 0,
       ),
       backgroundColor: Colors.white,
@@ -24,10 +25,12 @@ class LoginScreen extends StatelessWidget {
         child: Column(
           children: [
             NumbersRowWidget(
-              firstCircleColor: Color.fromRGBO(255, 184, 0, 1),
+              firstCircleColor: AppColors.orange,
               firstCircleContent: Text('1'),
-              secondCircleColor: Color.fromRGBO(236, 236, 236, 1),
+              secondCircleColor: AppColors.gray,
             ),
+            Text('Регистрация'),
+            Text('Введите номер телефона для регистрации'),
           ],
         ),
       ),

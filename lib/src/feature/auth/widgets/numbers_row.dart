@@ -1,3 +1,4 @@
+import 'package:auth_test/theme.dart';
 import 'package:flutter/material.dart';
 
 class NumbersRowWidget extends StatelessWidget {
@@ -31,16 +32,16 @@ class NumbersRowWidget extends StatelessWidget {
         Container(
           width: 44,
           height: 1,
-          decoration: BoxDecoration(
-            color: secondCircleColor,
+          decoration: const BoxDecoration(
+            color: AppColors.gray,
           ),
         ),
         Container(
           width: 36,
           height: 36,
-          decoration: const BoxDecoration(
+          decoration: BoxDecoration(
               //TODO: вывести цвет в переменные
-              color: Color.fromRGBO(236, 236, 236, 1),
+              color: secondCircleColor,
               shape: BoxShape.circle),
           child: const Center(
             child: Text('2'),
