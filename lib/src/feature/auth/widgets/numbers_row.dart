@@ -33,7 +33,7 @@ class NumbersRowWidget extends StatelessWidget {
           width: 44,
           height: 1,
           decoration: const BoxDecoration(
-            color: AppColors.gray,
+            color: AppColors.grey,
           ),
         ),
         Container(

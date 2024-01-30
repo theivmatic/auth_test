@@ -1,4 +1,5 @@
 import 'package:auth_test/src/feature/auth/widgets/numbers_row.dart';
+import 'package:auth_test/src/feature/auth/widgets/send_button.dart';
 import 'package:auth_test/theme.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -27,7 +28,7 @@ class LoginScreen extends StatelessWidget {
             const NumbersRowWidget(
               firstCircleColor: AppColors.orange,
               firstCircleContent: Text('1'),
-              secondCircleColor: AppColors.gray,
+              secondCircleColor: AppColors.grey,
             ),
             const SizedBox(height: 30),
             const Text(
@@ -65,6 +66,8 @@ class LoginScreen extends StatelessWidget {
                 ),
               ),
             ),
+            const SizedBox(height: 120),
+            const SendButtonWidget(isEnabled: false),
           ],
         ),
       ),
