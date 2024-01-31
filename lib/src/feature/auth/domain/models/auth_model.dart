@@ -6,7 +6,7 @@ class AuthModel {
   User? firebaseUser;
   FirebaseFirestore database = FirebaseFirestore.instance;
 
-  Future<void> loginWithAuth({
+  Future<void> loginWithPhone({
     required String phoneNumber,
     required Function(PhoneAuthCredential) verificationCompleted,
     required Function(FirebaseAuthException) verificationFailed,
